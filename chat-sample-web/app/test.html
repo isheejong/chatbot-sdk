@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+   <head>
+        <title>Standalone Demo</title>
+        <script src="https://oacse-namuga2019.analytics.ocp.oraclecloud.com/dv/ui/api/v1/plugins/embedding/standalone/embedding.js" type="application/javascript">
+        </script>
+
+   </head>
+   <body>
+        <h1>AJAX Standalone Demo</h1>
+        <div style="position: absolute; width: calc(100% - 40px); height: calc(100% - 120px)" >
+            <oracle-dv project-path="/shared/Sample/namuga_share" active-page="canvas" active-tab-id="3">
+            </oracle-dv>
+        </div>
+   </body>
+
+   <script>
+        requirejs(['knockout', 'ojs/ojcore', 'ojs/ojknockout', 'ojs/ojcomposite', 'jet-composites/oracle-dv/loader'], 
+            function(ko) {   
+                ko.applyBindings(); 
+            }
+        );
+    </script>
+
+</html>
